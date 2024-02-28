@@ -2,6 +2,7 @@
 <html>
 <head>
 <style>
+
 body {
   background: linear-gradient(to bottom left, teal, purple);
   height: 100vh; /* Set container to full viewport height */
@@ -19,22 +20,30 @@ body {
 } 
 
 h1 {
-  text-align:center;
-
+  text-align: center;
 }
-
 
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
+  <div id = rcorners1>
+    <section id="login-window">
+    <h1>Log In</h1>
 
+      <form id="login">
+          <!--A Class name can be used by multiple HTML elements--> 
+          <input type="text" placeholder="Enter your Email" class="form-input" autocomplete="off">
+          <!--An ID can only be used by one element--> 
+          <p class="error" id="username-error"> * Email is required!</p>
+          <input type="password" placeholder="Enter your Password">
+          <p class="error" id="password"> * Password is required! </p>
+      </form>
+      
+      <p class="form-footer"> Not a member?&nbsp;<a href="#">Sign Up</a></p>
+      <input class="btn btn-primary" type="submit" value="Submit">
 
-<div id = rcorners1>
-<h1>Log In</h1>
-<p>This linear gradient starts red at top left, transitioning to yellow (at bottom right):</p>
-<input class="btn btn-primary" type="submit" value="Submit">
-</div>
-
+    </section>
+  </div>
 </body>
 </html>
